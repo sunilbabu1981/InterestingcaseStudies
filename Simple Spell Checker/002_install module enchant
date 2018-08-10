@@ -1,1 +1,40 @@
 module enchant is part of package pyenchant
+
+BUT THERE IS ONE BIG PROBLEM. 
+
+For some reason, neither conda nor pip will help install the package pyenchant. 
+Also there is no support for this package. Having researched all the forums, there was one link that helped.
+
+https://www.reddit.com/r/learnpython/comments/3oju56/i_am_new_to_python_and_it_will_show/
+
+The problem is PyEnchant does not work with Python 64bit. "Downgrading" to 32bit resolved the issue.
+
+The command to install Pyenchant is as follows
+
+>pip install pyenchant
+Collecting pyenchant
+  Downloading https://files.pythonhosted.org/packages/83/ff/38ac490f1b8f9e7ff6a8d908b973abf552d35b0e80113149080a14620e40/pyenchant-2.0.0-py2.py3.cp27.cp32.cp33.cp34.cp35.cp36.pp27.pp33.pp35-none-win32.whl (3.6MB)
+    100% |████████████████████████████████| 3.6MB 2.2MB/s
+distributed 1.21.8 requires msgpack, which is not installed.
+Installing collected packages: pyenchant
+Successfully installed pyenchant-2.0.0
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+How it verify it worked?
+
+Run the following script
+
+import newspaper
+from nltk import word_tokenize
+import enchant
+import re
+
+url = 'https://hackernoon.com/dilemmas-of-a-digital-lifestyle-27c044940157'
+my_article=newspaper.Article(url,language='en')
+my_article.download()
+my_article.parse()
+print (my_article.text)
+
+On running this , it should successfully print the contents of the URL
+
