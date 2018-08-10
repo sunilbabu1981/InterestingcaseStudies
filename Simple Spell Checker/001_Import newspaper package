@@ -1,0 +1,72 @@
+
+For the spell checker to work, you need to install the package called newspaper in python
+
+if you are using normal python installations, use 'pip' to install newspaper package as follows
+
+  pip install newspaper
+  
+ if you are using readymade softwares like Anaconda, then you must use their custom installation command 
+ 
+ for eg., with anaconda, conda is the tool that is used to install packages
+ 
+  conda install -c conda-forge newspaper3k
+  
+ the following would the kind of messages displayed during installation
+ **************************************************************************************************************************************
+  Solving environment: done
+
+## Package Plan ##
+
+  environment location: C:\Users\peetsu01\AppData\Local\Continuum\anaconda3
+
+  added / updated specs:
+    - newspaper3k
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    requests-file-1.4.3        |           py36_0           8 KB
+    newspaper3k-0.2.6          |           py36_0         178 KB  conda-forge
+    feedparser-5.2.1           |           py36_0          89 KB
+    cssselect-1.0.3            |             py_0          16 KB  conda-forge
+    conda-4.5.9                |           py36_0         654 KB  conda-forge
+    tldextract-2.2.0           |             py_0          42 KB  conda-forge
+    feedfinder2-0.0.4          |             py_0           7 KB  conda-forge
+    certifi-2018.4.16          |           py36_0         143 KB  conda-forge
+    jieba3k-0.35.1             |           py36_1         6.7 MB  conda-forge
+    ------------------------------------------------------------
+                                           Total:         7.8 MB
+
+The following NEW packages will be INSTALLED:
+
+    cssselect:     1.0.3-py_0       conda-forge
+    feedfinder2:   0.0.4-py_0       conda-forge
+    feedparser:    5.2.1-py36_0
+    jieba3k:       0.35.1-py36_1    conda-forge
+    newspaper3k:   0.2.6-py36_0     conda-forge
+    requests-file: 1.4.3-py36_0
+    tldextract:    2.2.0-py_0       conda-forge
+
+The following packages will be UPDATED:
+
+    certifi:       2018.4.16-py36_0             --> 2018.4.16-py36_0 conda-forge
+    conda:         4.5.4-py36_0                 --> 4.5.9-py36_0     conda-forge
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+requests-file-1.4.3  |    8 KB | ############################################################################## | 100%
+newspaper3k-0.2.6    |  178 KB | ############################################################################## | 100%
+feedparser-5.2.1     |   89 KB | ############################################################################## | 100%
+cssselect-1.0.3      |   16 KB | ############################################################################## | 100%
+conda-4.5.9          |  654 KB | ############################################################################## | 100%
+tldextract-2.2.0     |   42 KB | ############################################################################## | 100%
+feedfinder2-0.0.4    |    7 KB | ############################################################################## | 100%
+certifi-2018.4.16    |  143 KB | ############################################################################## | 100%
+jieba3k-0.35.1       |  6.7 MB | ############################################################################## | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
